@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RummyScoreKeeper</string>
+    <string name="edit_text_hint_one">Player one</string>
+    <string name="edit_text_hint_two">Player two</string>
+    <string name="score">0</string>
+    <string name="minus_hundred">-100</string>
+    <string name="hundred">100</string>
+    <string name="minus_fifty">-50</string>
+    <string name="fifty">50</string>
+    <string name="minus_ten">-10</string>
+    <string name="ten">10</string>
+    <string name="minus_five">-5</string>
+    <string name="five">5</string>
+    <string name="reset">RESET</string>
+    <string name="done">DONE</string>
+</resources>

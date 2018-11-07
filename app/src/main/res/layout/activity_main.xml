@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/relativeLayout"
+    tools:context="com.example.beket.rummyscorekeeper.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/main_linear_layout"
+            style="@style/mainLinearLayout">
+
+            <LinearLayout style="@style/playerLinearLayout">
+
+                <EditText
+                    android:id="@+id/player_one_name_edit_text"
+                    style="@style/editText"
+                    android:hint="@string/edit_text_hint_one" />
+
+                <TextView
+                    android:id="@+id/player_one_name_text_view"
+                    style="@style/nameTextView" />
+
+                <TextView
+                    android:id="@+id/score_person_one"
+                    style="@style/scoreTextView"
+                    android:text="@string/score" />
+
+                <LinearLayout style="@style/buttonLinearLayout">
+
+                    <Button
+                        style="@style/leftButton"
+                        android:onClick="subtractHundredPersonOne"
+                        android:text="@string/minus_hundred" />
+
+                    <Button
+                        style="@style/rightButton"
+                        android:onClick="addHundredPersonOne"
+                        android:text="@string/hundred" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/buttonLinearLayout">
+
+                    <Button
+                        style="@style/leftButton"
+                        android:onClick="subtractFiftyPersonOne"
+                        android:text="@string/minus_fifty" />
+
+                    <Button
+                        style="@style/rightButton"
+                        android:onClick="addFiftyPersonOne"
+                        android:text="@string/fifty" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/buttonLinearLayout">
+
+                    <Button
+                        style="@style/leftButton"
+                        android:onClick="subtractTenPersonOne"
+                        android:text="@string/minus_ten" />
+
+                    <Button
+                        style="@style/rightButton"
+                        android:onClick="addTenPersonOne"
+                        android:text="@string/ten" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/buttonLinearLayout">
+
+                    <Button
+                        style="@style/leftButton"
+                        android:onClick="subtractFivePersonOne"
+                        android:text="@string/minus_five" />
+
+                    <Button
+                        style="@style/rightButton"
+                        android:onClick="addFivePersonOne"
+                        android:text="@string/five" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/view" />
+
+            <LinearLayout style="@style/playerLinearLayout">
+
+                <EditText
+                    android:id="@+id/player_two_name_edit_text"
+                    style="@style/editText"
+                    android:hint="@string/edit_text_hint_two" />
+
+                <TextView
+                    android:id="@+id/player_two_name_text_view"
+                    style="@style/nameTextView" />
+
+                <TextView
+                    android:id="@+id/score_person_two"
+                    style="@style/scoreTextView"
+                    android:text="@string/score" />
+
+                <LinearLayout style="@style/buttonLinearLayout">
+
+                    <Button
+                        style="@style/leftButton"
+                        android:onClick="subtractHundredPersonTwo"
+                        android:text="@string/minus_hundred" />
+
+                    <Button
+                        style="@style/rightButton"
+                        android:onClick="addHundredPersonTwo"
+                        android:text="@string/hundred" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/buttonLinearLayout">
+
+                    <Button
+                        style="@style/leftButton"
+                        android:onClick="subtractFiftyPersonTwo"
+                        android:text="@string/minus_fifty" />
+
+                    <Button
+                        style="@style/rightButton"
+                        android:onClick="addFiftyPersonTwo"
+                        android:text="@string/fifty" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/buttonLinearLayout">
+
+                    <Button
+                        style="@style/leftButton"
+                        android:onClick="subtractTenPersonTwo"
+                        android:text="@string/minus_ten" />
+
+                    <Button
+                        style="@style/rightButton"
+                        android:onClick="addTenPersonTwo"
+                        android:text="@string/ten" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/buttonLinearLayout">
+
+                    <Button
+                        style="@style/leftButton"
+                        android:onClick="subtractFivePersonTwo"
+                        android:text="@string/minus_five" />
+
+                    <Button
+                        style="@style/rightButton"
+                        android:onClick="addFivePersonTwo"
+                        android:text="@string/five" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/reset_button"
+        style="@style/resetButton"
+        android:onClick="onButtonClicked" />
+</RelativeLayout>
